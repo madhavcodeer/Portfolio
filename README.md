@@ -48,27 +48,22 @@ A premium, award-winning inspired personal portfolio website built for **Madhav 
 └── postcss.config.js      # PostCSS configuration for Tailwind v4
 ```
 
-## 🚀 Getting Started
+## 🚀 Deployment (Render.com)
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/madhavcodeer/Portfolio.git
-   ```
+This project is optimized for **Render** using a "Blueprint" (`render.yaml`).
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+### Option 1: One-Click Deploy (Blueprints)
+1. Push this code to your GitHub repository.
+2. In your [Render Dashboard](https://dashboard.render.com), click **New +** and select **Blueprint**.
+3. Connect your GitHub repository.
+4. Render will automatically detect `render.yaml` and set up the build command (`npm run build`) and publish directory (`dist`).
 
-3. **Run the development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production**
-   ```bash
-   npm run build
-   ```
+### Option 2: Manual Setup
+If you prefer manual setup on Render:
+1. Select **Static Site**.
+2. **Build Command**: `npm run build`
+3. **Publish Directory**: `dist`
+4. **Advanced**: Add a Rewrite Rule (Source: `/*`, Destination: `/index.html`) to support any potential future routing.
 
 ## 📬 Contact
 
